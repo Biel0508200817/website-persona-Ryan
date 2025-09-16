@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #590d7a; /* Alterado para branco */
+        color: #000; /* Alterado para preto para melhor contraste com fundo branco */
+        display: block; 
+        padding: 0; /* Removido o padding do body para controle mais preciso */
+
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        background-color: #440a5e; /* Alterado para branco */
+        padding: 80px;
+        border-radius: 24px;
+        max-width: 1200px;
+        width: 100%;
+        gap: 40px;
+        margin: 40px auto; /* Adicionado margem automática para centralizar o container */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adicionado uma sombra suave para destacar */
+    }
+
+    .container2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        background-color: #440a5e; /* Alterado para branco */
+        padding: 40px;
+        border-radius: 12px;
+        max-width: 1200px;
+        width: 100%;
+        gap: 40px;
+        margin: 40px auto; /* Adicionado margem automática para centralizar o container */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adicionado uma sombra suave para destacar */
+    }
+
+    .logo {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 500px; 
+        height: auto;
+        display: block; 
+        margin: 0 auto; 
+    }
+
+    .btn-app {
+        background-color: #f2cb05;
+        color: #440a5e;
+        font-weight: bold;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .btn-app:hover {
+        background-color: #F6D806;
+    }
+
+    .conteudo {
+        flex: 2;
+        min-width: 300px;
+        max-width: 700px;
+        line-height: 1.6;
+        color: #333; /* Cor do texto para contraste com fundo branco */
+    }
+
+    .conteudo h2 {
+        margin-bottom: 20px;
+        font-size: 28px;
+        font-weight: bold;
+        color: #F6D806;
+    }
+
+    .conteudo ul {
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    .conteudo li {
+        margin-bottom: 12px;
+    }
+
+    @media (max-width: 800px) {
+        .container {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .logo {
+            align-items: center;
+        }
+
+        .conteudo {
+            text-align: center;
+        }
+    }
+
+    /* As divs com essas classes precisam de ajuste */
+    .header-band { /* Nova classe para a faixa superior laranja */
+        width: 100%;
+        height: 90px; /* Ajuste conforme a altura desejada */
+        background-color: #faa51a; /* Cor laranja que você queria */
+    }
+
+    .section-title-background { /* Nova classe para o fundo do título "Sobre a Persona" */
+        width: 100%; /* Para que ocupe toda a largura */
+        padding: 20px 0; /* Espaçamento interno */
+        background-color: #f2cb05; /* Um tom de laranja/amarelo para o fundo do título */
+        text-align: center;
+        margin-top: 40px; /* Espaçamento superior */
+    }
+    
+    .section-title-background h1 {
+        margin: 0; /* Remover margem padrão do h1 */
+        color: #440a5e; /* Cor do texto para contraste */
+    }
+
+    .text-section { /* Nova classe para a seção de texto da persona */
+        background-color: #ffffff; /* Fundo branco para a seção de texto */
+        padding: 20px;
+        margin: 20px auto; /* Centraliza e adiciona margem */
+        max-width: 1200px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        color: #333; /* Cor do texto */
+    }
+    
+    .text-section h3 {
+        margin: 0;
+        line-height: 1.8;
+    }
+
+    /* Removido .cor1 e .cor2 do CSS para usar as novas classes ou cores diretas */
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSite do Persona</title>
+</head>
+<body>
+    <div class="header-band">
+        <img src="./Captura_de_tela_2025-09-16_132753-removebg-preview.png" alt="">
+    </div> 
+    <img src="./Persona_page-0001.jpg" alt="" width="1600" height="800" style="display: block; margin: 40px auto 20px auto;">
+    
+    <div class="section-title-background">
+        <h1>
+            <font color="#440a5e">Sobre a Persona:</font>
+        </h1>
+    </div>
+    
+    <div class="text-section">
+        <h3>
+            Trata-se da persona de um jovem de 17 anos, Ryan Luca Zamboni Pedro, natural de Sorocaba – SP, que está cursando o 2º ano do Ensino Médio e também fazendo curso de TI no Senai. Ele tem objetivos bem 
+            definidos, como terminar o Ensino Médio com boas notas, ser mais disciplinado nos estudos e melhorar suas habilidades em esportes, especialmente o basquete, que é 
+            uma de suas grandes paixões. Nos momentos de lazer, gosta de jogar videogame, é fã de Clash Royale, além de aproveitar o tempo para sair com seus primos. O basquete 
+            também aparece não apenas como hobby, mas como um estilo de vida que faz parte de sua rotina e de seus interesses pessoais. Sua persona mistura a disciplina 
+            acadêmica e profissional com um lado jovem, conectado e esportivo, equilibrando estudos, tecnologia, jogos digitais e esportes coletivos.
+        </h3> 
+    </div>
+
+    <div class="container">
+        <div class="logo">
+            <img src="./Captura_de_tela_2025-09-16_132753-removebg-preview.png" alt="Logo Lakers" width="1000" height="500" style="text-align: center;">
+        </div>
+
+        <div class="conteudo">
+            <h1 style="text-align: center;">
+                <font
+                color="white"
+            </font>
+                Mais Sobre o APP Realizado:  
+            </h1>
+            <h2>
+                O LakeShow é o app criado especialmente para os super fãs dos Lakers de Los Angeles que adoram estar ligados à franquia. Idealizado para pessoas como o Ryan, estudante e fã de basquete, o app reúne em um só lugar:
+            </h2>
+            <ul style="text-align: center;">
+                <font
+                color="white"
+            </font>
+                <li>🎥 Jogos Gravados e ao vivo: veja os jogos anteriores a hora que quiser e onde você estiver.</li>
+                <li>📊 Resultados e Números: acompanhe os placares e o que rola com o time.</li>
+                <li>📰 Notícias de primeira mão: receba as últimas sobre a franquia, os jogadores e tudo o que acontece por dentro.</li>
+                <li>📅 Próximos Jogos: fique por dentro de datas, horários e adversários.</li>
+                <li>⭐ Conteúdo Extra: análises, curiosidades históricas dos Lakers e muito mais.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="container2">
+         <img src="./Captura de tela 2025-09-16 175707.png" alt="" style="max-width: 100%; height: auto; margin: 10px;">
+        <img src="./Captura de tela 2025-09-16 175713.png" alt="" style="max-width: 100%; height: auto; margin: 10px;">
+        <img src="./Captura de tela 2025-09-16 175726.png" alt="" style="max-width: 100%; height: auto; margin: 10px;">
+        <img src="./Captura de tela 2025-09-16 185940.png" alt="" style="max-width: 100%; height: auto; margin: 10px;">
+    </div>
+</body>
+</html>
